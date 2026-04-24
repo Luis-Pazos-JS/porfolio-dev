@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import avatar from '../assets/67507483.png';
+---
+<header class="flex justify-between items-center py-3 w-280">
+   <Image class="rounded-full w-12 h-12" src={avatar} alt="luis-photo" />
+   
+  
+   <nav class="flex flex-row gap-x-10 opacity-90">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+   </nav>
+</header>
