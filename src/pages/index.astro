@@ -1,20 +1,55 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Github from "../components/icons/GitHub.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Mail from "../components/icons/Mail.astro";
+
 ---
 
 <Layout title="Pazos-Dev">
-   <main>
-      <section class="w-full lg:w-185 mx-auto py-44">
-      <h1 class="text-white text-5xl font-bold flex flex-row justify-center  gap-x-4 pb-10">
-         Hi, I'm Luis Pazos! 
-         <a href="">
-            <Badge class=" flex justify-center items-center">Disponible para trabajar</Badge> 
-         </a>
+  <main>
+    <section class="w-full lg:w-185 mx-auto py-44">
+      <h1
+        class="text-white text-5xl font-bold flex flex-row justify-center gap-x-4 pb-10"
+      >
+        Hi, I'm Luis Pazos!
+        <a href="">
+          <Badge class="flex justify-center items-center"
+            >Disponible para trabajar</Badge
+          >
+        </a>
       </h1>
-      <h2 class="text-xl opacity-80">Técnico Informático con +7 años de experiencia. Ahora, iniciándome como Desarrollador Web Junior.</h2>
-      <p class="text-xs text-right  opacity-60 pl-50 py-3">Provengo del mundo del soporte técnico, la administración de sistemas y el mantenimiento informático. Esa es mi base. Ahora estoy enfocado en dar el salto al desarrollo web, buscando mi primera oportunidad como programador.</p>
-      </section>
-</main>
-	
+      <h2 class="text-xl opacity-80">
+        Técnico Informático con +7 años de experiencia. Ahora, iniciándome como
+        Desarrollador Web Junior.
+      </h2>
+      <p class="text-xs  opacity-60 py-3">
+        Provengo del mundo del soporte técnico, la administración de sistemas y
+        el mantenimiento informático. Esa es mi base. Ahora estoy enfocado en
+        dar el salto al desarrollo web, buscando mi primera oportunidad como
+        programador.
+      </p>
+      <nav
+        class="anim-fade-in anim-delay-3 
+        flex flex-wrap justify-center gap-4 mt-8"
+        aria-label="Redes sociales y contacto"
+      >
+        <SocialPill href="https://github.com/Luis-Pazos-JS">
+          <Github class="size-6" />
+          Github
+         </SocialPill>
+
+          <SocialPill href="https://www.linkedin.com/in/luis-pazos-dev/">
+            <LinkedIn class="size-6" />
+            LinkedIn
+          </SocialPill>
+        <SocialPill href="mailto:luispazos5533@gmail.com">
+          <Mail class="size-6" />
+          About me
+        </SocialPill>
+      </nav>
+    </section>
+  </main>
 </Layout>
